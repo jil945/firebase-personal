@@ -1,0 +1,10 @@
+{
+    "indent_size": 4,
+    "indent_char": " ",
+    "css": {
+        "indent_size": 4
+    },
+    "end_with_newline": false,
+    "newline_between_rules": true,
+    "brace_style": "end-expand"
+}
