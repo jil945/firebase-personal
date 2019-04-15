@@ -38,7 +38,9 @@
 
         <v-content>
             <v-container>
-                <router-view></router-view>
+                <transition name="fade" mode="out-in">
+                    <router-view></router-view>
+                </transition>
             </v-container>
         </v-content>
     </v-app>
@@ -46,7 +48,6 @@
 
 <script>
 import store from "./store";
-import { mapState } from "vuex";
 
 export default {
     name: "App",
@@ -79,3 +80,7 @@ export default {
     }
 };
 </script>
+
+<style lang="scss">
+@import "./assets/style.scss"
+</style>

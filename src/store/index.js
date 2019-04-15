@@ -24,7 +24,6 @@ export default new Vuex.Store({
     },
     actions: {
         fetchSettings: ({ commit, state }) => {
-            console.log("Fetch settings");
             for (let field in state.settings) {
                 let storageValue = window.localStorage.getItem(SETTINGS_KEY(field));
                 if (storageValue && storageValue.length > 0) {

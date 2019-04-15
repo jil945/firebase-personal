@@ -5,8 +5,9 @@
     "scripts": {
         "dev": "npm run serve -- --open --mode development",
         "serve": "vue-cli-service serve",
-        "build": "vue-cli-service build",
-        "lint": "vue-cli-service lint"
+        "build": "vue-cli-service lint --mode production && vue-cli-service build",
+        "lint": "vue-cli-service lint",
+        "deploy": "firebase deploy"
     },
     "dependencies": {
         "core-js": "^2.6.5",
